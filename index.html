@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="icon" type="image/png" href="./card-game.png">
+
+
+    <link rel="stylesheet" href="./index.css">
+
+        <!--fonts------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap" rel="stylesheet">
+        
+
+
+</head>
+<body>
+    <div class="memory-game">
+        <div class="head-of-game">
+            <div class="hello"> Hello: <span>Osama</span></div>
+            <div class="tries">Wrong Tries: <span></span></div>
+        </div>
+        <div class="empty-div"></div>
+        <button class="start-play">Start Play</button>
+        <div class="container-img-gm">
+            <div class="img-gm" data-game="red" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/ff0000/ffffff?text=red&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="red">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/ff0000/ffffff?text=red&font=noto" alt="">
+                </div>
+            </div>
+
+            <div class="img-gm" data-game="green" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/1fde39/ffffff?text=green&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="green">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/1fde39/ffffff?text=green&font=noto" alt="">
+                </div>
+            </div>
+
+
+            <div class="img-gm" data-game="yellow" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/dbcd0d/ffffff?text=yellow&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="yellow">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/dbcd0d/ffffff?text=yellow&font=noto" alt="">
+                </div>
+            </div>
+
+            
+            <div class="img-gm" data-game="purple" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/9a0ddb/ffffff?text=purple&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="purple">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/9a0ddb/ffffff?text=purple&font=noto" alt="">
+                </div>
+            </div>
+
+            
+            <div class="img-gm" data-game="brown" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/a30c3b/ffffff?text=brown&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="brown">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/a30c3b/ffffff?text=brown&font=noto" alt="">
+                </div>
+            </div>
+
+            <div class="img-gm" data-game="blue" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/0f79db/ffffff?text=blue&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="blue">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/0f79db/ffffff?text=blue&font=noto" alt="">
+                </div>
+            </div>
+
+            <div class="img-gm" data-game="black" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/000000/ffffff?text=black&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="black">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/000000/ffffff?text=black&font=noto" alt="">
+                </div>
+            </div>
+
+            <div class="img-gm" data-game="orange" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/f05518/ffffff?text=orange&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="orange">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/f05518/ffffff?text=orange&font=noto" alt="">
+                </div>
+            </div>
+
+
+            <div class="img-gm" data-game="gray" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/bdb2ae/ffffff?text=gray&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="gray">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/bdb2ae/ffffff?text=gray&font=noto" alt="">
+                </div>
+            </div>
+
+            
+            <div class="img-gm" data-game="pink" >
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/f02bd6/ffffff?text=pink&font=noto" alt="">
+                </div>
+            </div>
+            <div class="img-gm" data-game="pink">
+                <div class="face front">?</div>
+                <div class="face back">
+                    <img src="https://fakeimg.pl/150x150/f02bd6/ffffff?text=pink&font=noto" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>

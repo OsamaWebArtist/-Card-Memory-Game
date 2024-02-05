@@ -1,0 +1,122 @@
+:root {
+    --main-color: #2196f3;
+}
+body{
+    HEIGHT: 100%;
+    background: linear-gradient(153deg, black, #cfcfcf);
+}
+.memory-game{
+    width: 800px;
+    margin: 10px auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.head-of-game{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #d1d0d0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f0efef;
+}
+.tries span{
+    color: #2196f3;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container-img-gm{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.container-img-gm .img-gm{
+    height: 150px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    margin: 0 10px 20px;
+}
+.container-img-gm .img-gm .face{
+    margin: 5px;
+    position: absolute;
+    width: 94%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+.container-img-gm .img-gm .front{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 90px;
+}
+
+.container-img-gm .img-gm .back{
+    transform: rotateY(-180deg);
+}
+.container-img-gm .flip-card{
+    transform: rotateY(180deg);
+}
+.container-img-gm .match-card{
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+.def-flip{
+animation: bestRotate 0.7s linear forwards;
+}
+@keyframes bestRotate {
+    0%{
+        transform: rotateY(0deg)
+    }
+    30%{
+        transform: rotateY(180deg)
+    }
+    50%{
+        transform: rotateY(180deg)
+    }
+    70%{
+        transform: rotateY(180deg)
+    }
+    100%{
+        transform: rotateY(0deg)
+    }
+}
+
+.img-gm .face img{
+    border-radius: 5px;
+    
+}
+.start-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 1;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.empty-div{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100% ;
+    height: 100%;
+    background-color: #eee;
+    opacity: 0.5;
+    border-radius: 5px;
+}
